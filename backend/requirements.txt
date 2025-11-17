@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+sqlalchemy
+pydantic
+pydantic_settings
+psycopg2-binary
+redis
+python-jose
+python-multipart
+pandas
+scikit-learn
+joblib
+openai

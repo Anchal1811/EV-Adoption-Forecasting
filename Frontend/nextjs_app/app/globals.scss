@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #f5f7fa;
+  font-family: "Inter", sans-serif;
+}
+
+.card {
+  @apply bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition-all duration-300;
+}
+
+.input {
+  @apply w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500 transition;
+}
+
+.btn-primary {
+  @apply px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition;
+}
+
+.btn-secondary {
+  @apply px-4 py-2 bg-gray-200 text-black rounded-lg hover:bg-gray-300 transition;
+}

@@ -151,7 +151,7 @@ genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 @app.post("/api/v1/chatbot")
 def chatbot(ev_input: schemas.ChatbotIn):
     try:
-        model = genai.GenerativeModel("gemini-1.0-pro")   # <-- FIXED MODEL
+        model = genai.GenerativeModel("gemini-2.5-flash")   # <-- FIXED MODEL
         response = model.generate_content(ev_input.message)
 
         reply = getattr(response, "text", None)
